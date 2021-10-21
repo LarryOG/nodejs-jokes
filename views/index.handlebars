@@ -1,0 +1,14 @@
+<button onclick="change_text()">
+
+<p id="setup"> {{setup}}</p>
+<p id="punchline"></p>
+</button>
+
+<script>
+function change_text(){
+    
+    if (document.getElementById("punchline").innerHTML == "{{punchline}}"){
+        window.location.reload();
+    }else document.getElementById("punchline").innerHTML = "{{punchline}}";
+}
+</script>
